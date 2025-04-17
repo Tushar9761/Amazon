@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page - Amazon Clone</title>
+    <link rel="stylesheet" href="StlyePayment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <div class="logo">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240326183545/amazon.png" alt="Amazon Logo">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SignIn.html">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container my-5">
+        <h2 class="text-center">Payment Details</h2>
+        <form>
+            <div class="mb-3">
+                <label for="cardName" class="form-label">Name on Card</label>
+                <input type="text" class="form-control" id="cardName" required>
+            </div>
+            <div class="mb-3">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" required>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="expiryDate" class="form-label">Expiry Date</label>
+                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="col">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cvv" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Complete Payment</button>
+        </form>
+    </div>
+
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Amazon. All rights reserved.</p>
+    </footer>
+</body>
+</html>

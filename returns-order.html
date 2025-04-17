@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns and Orders</title>
+    <link rel="stylesheet" href="Sty.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Returns and Orders</h1>
+
+        <section class="returns">
+            <h2>Return an Item</h2>
+            <form>
+                <label for="order-id">Order ID:</label>
+                <input type="text" id="order-id" required>
+                
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" required>
+                
+                <label for="reason">Reason for Return:</label>
+                <textarea id="reason" rows="4" required></textarea>
+                
+                <button type="submit" class="submit-btn">Submit Return Request</button>
+            </form>
+        </section>
+
+        <section class="order-status">
+            <h2>Check Order Status</h2>
+            <form>
+                <label for="order-id-status">Order ID:</label>
+                <input type="text" id="order-id-status" required>
+                
+                <button type="submit" class="submit-btn">Check Status</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
